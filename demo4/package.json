@@ -2,7 +2,7 @@
   "name": "demo4",
   "version": "8.1.7",
   "private": true,
-  "homepage": "/metronic8/react/demo4",
+  "homepage": "/",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@formatjs/intl-pluralrules": "4.3.3",

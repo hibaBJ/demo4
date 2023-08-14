@@ -13,21 +13,8 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bold text-dark'>Authors</h3>
-        <div className='card-toolbar'>
-          {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
-          {/* end::Menu */}
-        </div>
+        <h3 className='card-title fw-bold text-dark'>Les Employés</h3>
+        
       </div>
       {/* end::Header */}
       {/* begin::Body */}
@@ -61,7 +48,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
             <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
               Zitouni Mohamed
             </a>
-            <span className='text-muted d-block fw-semibold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-semibold'>node js,.net,spring boot</span>
           </div>
           {/* end::Text */}
         </div>
@@ -78,7 +65,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
             <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
               Ismail
             </a>
-            <span className='text-muted d-block fw-semibold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-semibold'>Technicien</span>
           </div>
           {/* end::Text */}
         </div>
@@ -93,9 +80,9 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
           {/* begin::Text */}
           <div className='flex-grow-1'>
             <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
-              Francis Mitcham
+              Khawla hmila
             </a>
-            <span className='text-muted d-block fw-semibold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-semibold'>administrateur serveur</span>
           </div>
           {/* end::Text */}
         </div>
@@ -112,7 +99,7 @@ const ListsWidget2: React.FC<Props> = ({className}) => {
             <a href='#' className='text-dark fw-bold text-hover-primary fs-6'>
               Mokhtar Chouchen
             </a>
-            <span className='text-muted d-block fw-semibold'>PHP, SQLite, Artisan CLI</span>
+            <span className='text-muted d-block fw-semibold'>React js ,.net .sql server</span>
           </div>
           {/* end::Text */}
         </div>

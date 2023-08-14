@@ -47,14 +47,14 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
 
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        School Music Festival
+                        Application de gestion
                       </a>
-                      <span className='text-muted fw-semibold d-block fs-7'>by Rose Liam</span>
+                      
                     </td>
 
                     <td>
-                      <span className='text-dark fw-bold d-block fs-7'>4:20PM, 03 Sep</span>
-                      <span className='text-muted fw-semibold d-block fs-8'>React </span>
+                      <span className='text-dark fw-bold d-block fs-7'>react, .net</span>
+                     
                     </td>
                     <td >
                     <div className='d-flex flex-column w-100 me-2'>
@@ -78,13 +78,13 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Maths Championship
+                        Projet mobile 
                       </a>
-                      <span className='text-muted fw-semibold d-block fs-7'>By Tom Gere</span>
+                     
                     </td>
                     <td >
-                      <span className='text-dark fw-bold d-block fs-7'>10:05PM, 25 Oct</span>
-                      <span className='text-muted fw-semibold d-block fs-8'>Date</span>
+                      <span className='text-dark fw-bold d-block fs-7'> Flutter</span>
+                     
                     </td>
                     <td className='text-end'>
                     <div className='d-flex flex-column w-100 me-2'>
@@ -108,13 +108,13 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Who Knows Geography
+                        Design
                       </a>
-                      <span className='text-muted fw-semibold d-block fs-7'>By Zoey Dylan</span>
+                      
                     </td>
                     <td>
-                      <span className='text-dark fw-bold d-block fs-7'>3:22PM, 07 Sep</span>
-                      <span className='text-muted fw-semibold d-block fs-8'>Date</span>
+                      <span className='text-dark fw-bold d-block fs-7'>UX/UI</span>
+                      
                     </td>
                     <td className='text-end'>
                     <div className='d-flex flex-column w-100 me-2'>
@@ -138,14 +138,14 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        Napoleon Days
+                        Application médicale
                       </a>
-                      <span className='text-muted fw-semibold d-block fs-7'>By Luke Owen</span>
+                      
                     </td>
                     <td>
-                      <span className='text-dark fw-bold d-block fs-7'>1:20PM, 02 Dec</span>
-                      <span className='text-muted fw-semibold d-block fs-8'>Date</span>
-                    </td>
+                      <span className='text-dark fw-bold d-block fs-7'>java script </span>
+                      
+                                          </td>
                     <td className='text-end'>
                     <div className='d-flex flex-column w-100 me-2'>
                     <div className='d-flex flex-stack mb-2'>
@@ -168,13 +168,13 @@ const TablesWidget8: React.FC<Props> = ({className}) => {
                     </td>
                     <td>
                       <a href='#' className='text-dark fw-bold text-hover-primary mb-1 fs-6'>
-                        The School Art Leads
+                        Gestion des fabricants
                       </a>
-                      <span className='text-muted fw-semibold d-block fs-7'>By Ellie Cole</span>
+                      
                     </td>
                     <td>
-                      <span className='text-dark fw-bold d-block fs-7'>6:20PM, 07 Sep</span>
-                      <span className='text-muted fw-semibold d-block fs-8'>Date</span>
+                      <span className='text-dark fw-bold d-block fs-7'>java script ,html,CSS </span>
+                      
                     </td>
                     <td className='text-end'>
                     <div className='d-flex flex-column w-100 me-2'>

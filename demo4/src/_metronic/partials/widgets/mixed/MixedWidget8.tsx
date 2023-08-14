@@ -43,24 +43,16 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
     <div className={`card ${className}`}>
       {/* begin::Beader */}
       <div className='card-header border-0 py-5'>
-        <h3 className='card-title align-items-start flex-column'>
-          <span className='card-label fw-bold fs-3 mb-1'>Trends</span>
+        <h4 className='card-title align-items-start flex-column'>
+          <span className='card-label fw-bold fs-3 mb-1'>Top travail du mois</span>
 
-          <span className='text-muted fw-semibold fs-7'>Latest trends</span>
-        </h3>
+          
+        </h4>
 
         <div className='card-toolbar'>
           {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
+         
+        
           {/* end::Menu */}
         </div>
       </div>
@@ -95,7 +87,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
                 <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
                   Top Employees
                 </a>
-                <div className='fs-7 text-muted fw-semibold mt-1'>Ricky Hunt, Sandra Trepp</div>
+                
               </div>
               {/* end::Title */}
             </div>
@@ -128,7 +120,7 @@ const MixedWidget8: React.FC<Props> = ({className, chartColor, chartHeight}) => 
                 <a href='#' className='fs-6 text-gray-800 text-hover-primary fw-bold'>
                   Top Projects
                 </a>
-                <div className='fs-7 text-muted fw-semibold mt-1'>PitStop Emails</div>
+               
               </div>
               {/* end::Title */}
             </div>

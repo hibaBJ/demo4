@@ -13,20 +13,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
       {/* begin::Header */}
       <div className='card-header border-0'>
         <h3 className='card-title fw-bold text-dark'>Notifications</h3>
-        <div className='card-toolbar'>
-          {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
-          {/* end::Menu */}
-        </div>
+        
       </div>
       {/* end::Header */}
       {/* begin::Body */}
@@ -41,9 +28,9 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Group lunch celebration
+              Cloture de projet mobile
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 2 jours</span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
@@ -52,24 +39,7 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
         </div>
         {/* end::Item */}
         {/* begin::Item */}
-        <div className='d-flex align-items-center bg-light-success rounded p-5 mb-7'>
-          {/* begin::Icon */}
-          <span className='svg-icon svg-icon-success me-5'>
-            <KTSVG path='/media/icons/duotune/abstract/abs027.svg' className='svg-icon-1' />
-          </span>
-          {/* end::Icon */}
-          {/* begin::Title */}
-          <div className='flex-grow-1 me-2'>
-            <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Navigation optimization
-            </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
-          </div>
-          {/* end::Title */}
-          {/* begin::Lable */}
-          
-          {/* end::Lable */}
-        </div>
+        
         {/* end::Item */}
         {/* begin::Item */}
         <div className='d-flex align-items-center bg-light-danger rounded p-5 mb-7'>
@@ -81,9 +51,9 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              New project planning
+              Planning de projet 
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 5 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 5 jours</span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}
@@ -101,9 +71,9 @@ const ListsWidget6: React.FC<Props> = ({className}) => {
           {/* begin::Title */}
           <div className='flex-grow-1 me-2'>
             <a href='#' className='fw-bold text-gray-800 text-hover-primary fs-6'>
-              Brainstorming Session
+              Brainstorming 
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 7 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 7 jours</span>
           </div>
           {/* end::Title */}
           {/* begin::Lable */}

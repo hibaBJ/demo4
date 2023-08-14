@@ -12,21 +12,8 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
     <div className={`card ${className}`}>
       {/* begin::Header */}
       <div className='card-header border-0'>
-        <h3 className='card-title fw-bold text-dark'>Todo</h3>
-        <div className='card-toolbar'>
-          {/* begin::Menu */}
-          <button
-            type='button'
-            className='btn btn-sm btn-icon btn-color-primary btn-active-light-primary'
-            data-kt-menu-trigger='click'
-            data-kt-menu-placement='bottom-end'
-            data-kt-menu-flip='top-end'
-          >
-            <KTSVG path='/media/icons/duotune/general/gen024.svg' className='svg-icon-2' />
-          </button>
-          <Dropdown1 />
-          {/* end::Menu */}
-        </div>
+        <h3 className='card-title fw-bold text-dark'>Liste à faire</h3>
+        
       </div>
       {/* end::Header */}
       {/* begin::Body */}
@@ -44,9 +31,9 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* begin::Description */}
           <div className='flex-grow-1'>
             <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
-              Create FireStone Logo
+              Brainstorming
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 2 jours</span>
           </div>
           {/* end::Description */}
           <span className='badge badge-light-success fs-8 fw-bold'>New</span>
@@ -65,9 +52,9 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* begin::Description */}
           <div className='flex-grow-1'>
             <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
-              Stakeholder Meeting
+              Marketing Meeting
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 3 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 3 jours</span>
           </div>
           {/* end::Description */}
           <span className='badge badge-light-primary fs-8 fw-bold'>New</span>
@@ -88,32 +75,14 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
             <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
               Scoping &amp; Estimations
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 5 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 5 jours</span>
           </div>
           {/* end::Description */}
           <span className='badge badge-light-warning fs-8 fw-bold'>New</span>
         </div>
         {/* end:Item */}
         {/* begin::Item */}
-        <div className='d-flex align-items-center mb-8'>
-          {/* begin::Bullet */}
-          <span className='bullet bullet-vertical h-40px bg-primary'></span>
-          {/* end::Bullet */}
-          {/* begin::Checkbox */}
-          <div className='form-check form-check-custom form-check-solid mx-5'>
-            <input className='form-check-input' type='checkbox' value='' />
-          </div>
-          {/* end::Checkbox */}
-          {/* begin::Description */}
-          <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
-              KPI App Showcase
-            </a>
-            <span className='text-muted fw-semibold d-block'>Due in 2 Days</span>
-          </div>
-          {/* end::Description */}
-          <span className='badge badge-light-primary fs-8 fw-bold'>New</span>
-        </div>
+       
         {/* end:Item */}
         {/* begin::Item */}
         <div className='d-flex align-items-center mb-8'>
@@ -128,34 +97,16 @@ const ListsWidget3: React.FC<Props> = ({className}) => {
           {/* begin::Description */}
           <div className='flex-grow-1'>
             <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
-              Project Meeting
+             réunion projet
             </a>
-            <span className='text-muted fw-semibold d-block'>Due in 12 Days</span>
+            <span className='text-muted fw-semibold d-block'>dans 3 jours</span>
           </div>
           {/* end::Description */}
           <span className='badge badge-light-danger fs-8 fw-bold'>New</span>
         </div>
         {/* end:Item */}
         {/* begin::Item */}
-        <div className='d-flex align-items-center'>
-          {/* begin::Bullet */}
-          <span className='bullet bullet-vertical h-40px bg-success'></span>
-          {/* end::Bullet */}
-          {/* begin::Checkbox */}
-          <div className='form-check form-check-custom form-check-solid mx-5'>
-            <input className='form-check-input' type='checkbox' value='' />
-          </div>
-          {/* end::Checkbox */}
-          {/* begin::Description */}
-          <div className='flex-grow-1'>
-            <a href='#' className='text-gray-800 text-hover-primary fw-bold fs-6'>
-              Customers Update
-            </a>
-            <span className='text-muted fw-semibold d-block'>Due in 1 week</span>
-          </div>
-          {/* end::Description */}
-          <span className='badge badge-light-success fs-8 fw-bold'>New</span>
-        </div>
+        
         {/* end:Item */}
       </div>
       {/* end::Body */}
