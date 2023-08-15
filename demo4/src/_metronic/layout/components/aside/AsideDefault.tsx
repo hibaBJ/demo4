@@ -48,25 +48,7 @@ const AsideDefault: FC = () => {
         id='kt_aside_footer'
       >
         {/* begin::Menu */}
-        <div className='mb-7'>
-          <button
-            type='button'
-            className='btn btm-sm btn-icon btn-color-white btn-active-color-primary btn-active-light'
-            data-kt-menu-trigger='click'
-            data-kt-menu-overflow='true'
-            data-kt-menu-placement='top-start'
-            data-bs-toggle='tooltip'
-            data-bs-placement='right'
-            data-bs-dismiss='click'
-            title='Quick actions'
-          >
-            <KTSVG
-              path='/media/icons/duotune/general/gen008.svg'
-              className='svg-icon-2 svg-icon-lg-1'
-            />
-          </button>
-          <Dropdown2 />
-        </div>
+
         {/* end::Menu */}
       </div>
       {/* end::Footer */}
