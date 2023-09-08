@@ -2,7 +2,7 @@
   "name": "demo4",
   "version": "8.1.7",
   "private": true,
-  "homepage": "/metronic8/react/demo4",
+  "homepage": "https://hibaBJ.github.io/demo4",
   "dependencies": {
     "@emotion/styled": "^11.11.0",
     "@formatjs/intl-pluralrules": "4.3.3",
@@ -65,6 +65,7 @@
     "@types/sass-loader": "8.0.3",
     "css-loader": "6.7.1",
     "del": "6.0.0",
+    "gh-pages": "^6.0.0",
     "mini-css-extract-plugin": "2.6.1",
     "prettier": "2.6.2",
     "rtlcss-webpack-plugin": "4.0.7",
@@ -74,6 +75,7 @@
     "webpack-cli": "4.10.0"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
