@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import AjoutRole from "../../../_metronic/partials/modals/AjoutRole";
 import axios from "axios";
 import { IconButton } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
 import EditEmployee from "../../../_metronic/partials/modals/EditEmployee";
 
 
@@ -23,17 +22,17 @@ const getRoles = () => {
     
 }
 //SEARCH
-const [SearchParameterName,setSearchParameterName]=useState('');
-const handleInputChange=(event)=>{
-  setSearchParameterName(event.target.value.toString());
-}
-
-const searchItems=()=>{
-  let URL=SearchParameterName!=""?("https://localhost:7091/api/Role/Search?prName"+SearchParameterName):"https://localhost:7091/api/Role/GetAll";
-  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-  setRole(response.data);
-})
-}
+//const [SearchParameterName,setSearchParameterName]=useState('');
+//const handleInputChange=(event)=>{
+//  setSearchParameterName(event.target.value.toString());
+//}
+//
+//const searchItems=()=>{
+//  let URL=SearchParameterName!=""?("https://localhost:7091/api/Role/Search?prName"+SearchParameterName):"https://localhost:7091/api/Role/GetAll";
+//  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//  setRole(response.data);
+//})
+//}
 
 /**UPDATE */
 const updateEmployee= (formValue)=>{

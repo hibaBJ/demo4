@@ -16,18 +16,18 @@ export function Accessoires(){
       
   }
 
-   /**SEARCH */
-    const [SearchParameterName,setSearchParameterName]=useState('');
-    const handleInputChange=(event)=>{
-    setSearchParameterName(event.target.value.toString());
-}
-
-const searchItems=()=>{
-  let URL=SearchParameterName!=""?("https://localhost:7091/api/Accessoires/Search?prName"+SearchParameterName):"https://localhost:7091/api/Accessoires/GetAll";
-  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-  setAccessoires(response.data);
-})
-}
+ //  /**SEARCH */
+ //   const [SearchParameterName,setSearchParameterName]=useState('');
+ //   const handleInputChange=(event)=>{
+ //   setSearchParameterName(event.target.value.toString());
+ //}
+ //
+ //const searchItems=()=>{
+ // let URL=SearchParameterName!=""?("https://localhost:7091/api/Accessoires/Search?prName"+SearchParameterName):"https://localhost:7091/api/Accessoires/GetAll";
+ // axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+ // setAccessoires(response.data);
+ //})s
+ //}
    /**DELETE */
    const deleteAccessoires=(prAccessoire)=>{
     axios.delete("https://localhost:7091/api/Accessoires/Delete",{data:prAccessoire}).then( response =>{

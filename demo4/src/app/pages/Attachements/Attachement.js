@@ -1,8 +1,6 @@
 import React,{useEffect,useState} from "react";
 import axios from "axios";
 import { IconButton } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 import AjoutAttachement from "../../../_metronic/partials/modals/AjoutAttachement";
 import EditAttachement from "../../../_metronic/partials/modals/EditAttachement";
 
@@ -22,16 +20,16 @@ useEffect(()=>{fetch("https://localhost:7091/api/Attachements/GetAll").then(resp
   }
 //SEARCH
 
-const [SearchParameterName,setSearchParameterName]=useState('');
-const handleInputChange=(event)=>{
-  setSearchParameterName(event.target.value.toString());
-}
-  const searchItems=()=>{
-    let URL=SearchParameterName!=""?("https://localhost:7091/api/Attachements/Search?prName"+SearchParameterName):"https://localhost:7091/api/Attachements/GetAll";
-    axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-    setAttachement(response.data);
-  })
-  }
+//nst [SearchParameterName,setSearchParameterName]=useState('');
+//nst handleInputChange=(event)=>{
+//setSearchParameterName(event.target.value.toString());
+//
+//const searchItems=()=>{
+//  let URL=SearchParameterName!=""?("https://localhost:7091/api/Attachements/Search?prName"+SearchParameterName):"https://localhost:7091/api/Attachements/GetAll";
+//  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//  setAttachement(response.data);
+//})
+//}
    
    /**UPDATE */
    const updateAttachement=(formValue)=>{

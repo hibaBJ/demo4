@@ -1,8 +1,8 @@
 import React from "react";
-import {Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-import Groupes from "./Groupes";
+//import Groupes from "./Groupes";
  export function Administration(){
     return (
       <div className="administration">

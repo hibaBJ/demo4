@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import  axios  from 'axios';
 import AjoutGroupe from '../../../_metronic/partials/modals/AjoutGroupe';
-import DeleteIcon from '@mui/icons-material/Delete';
+
 import { IconButton } from "@mui/material";
 import EditGroupe from '../../../_metronic/partials/modals/EditGroupe';
 
@@ -20,16 +20,16 @@ import EditGroupe from '../../../_metronic/partials/modals/EditGroupe';
     }
  /**SEARCH */
 
-   const [SearchParameterName,setSearchParameterName]=useState('');
-   const handleInputChange=(event)=>{
-    setSearchParameterName(event.target.value.toString());
-  }
-   const searchItems=()=>{
-    let URL=SearchParameterName!=""?("https://localhost:7091/api/Groupe/Search?prName"+SearchParameterName):"https://localhost:7091/api/Groupe/GetAll";
-    axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-    setGroupe(response.data);
-  })
-  }
+///  const [SearchParameterName,setSearchParameterName]=useState('');
+///  const handleInputChange=(event)=>{
+///   setSearchParameterName(event.target.value.toString());
+/// }
+///  const searchItems=()=>{
+///   let URL=SearchParameterName!=""?("https://localhost:7091/api/Groupe/Search?prName"+SearchParameterName):"https://localhost:7091/api/Groupe/GetAll";
+///   axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+///   setGroupe(response.data);
+/// })
+/// }
     /*Ajout*/
     const saveGroupe = (formValue) => {
       axios.post("https://localhost:7091/api/Groupe/Save",formValue).then(response=>{

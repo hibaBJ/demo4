@@ -6,7 +6,7 @@ import { UsersListFilter } from "../../modules/apps/user-management/users-list/c
 import AjEmployee from "../../../_metronic/partials/modals/AjEmployee";
 import EditEmp from "../../../_metronic/partials/modals/EditEmp";
 import { UsersListPagination } from "../../modules/apps/user-management/users-list/components/pagination/UsersListPagination";
-import { UsersListSearchComponent } from "../../modules/apps/user-management/users-list/components/header/UsersListSearchComponent";
+//import { UsersListSearchComponent } from "../../modules/apps/user-management/users-list/components/header/UsersListSearchComponent";
 
 
 
@@ -25,17 +25,17 @@ const getEmployees = () => {
    
 }
 //SEARCH
-const [SearchParameterName,setSearchParameterName]=useState('');
-const handleInputChange=(event)=>{
- setSearchParameterName(event.target.value.toString());
-}
-
-const searchItems=()=>{
- let URL=SearchParameterName!=""?("https://localhost:7091/api/Employee/Search?prName"+SearchParameterName):"https://localhost:7091/api/Employee/GetAll";
- axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
- setEmployee(response.data);
-})
-}
+//const [SearchParameterName,setSearchParameterName]=useState('');
+//const handleInputChange=(event)=>{
+// setSearchParameterName(event.target.value.toString());
+//}
+//
+//const searchItems=()=>{
+// let URL=SearchParameterName!=""?("https://localhost:7091/api/Employee/Search?prName"+SearchParameterName):"https://localhost:7091/api/Employee/GetAll";
+// axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+// setEmployee(response.data);
+//})
+//}
 /**UPDATE */
 const updateEmployee= (formValue)=>{
   console.log(formValue);
