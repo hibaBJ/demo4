@@ -6,11 +6,15 @@ name: ci
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   docker:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: demo4
     steps:
       -
         name: Checkout
