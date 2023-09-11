@@ -4,7 +4,7 @@ import {PageTitle} from '../../../_metronic/layout/core'
 import { ListsWidget2, ListsWidget3,ListsWidget6 } from '../../../_metronic/partials/widgets'
 import { MixedWidget8 } from '../../../_metronic/partials/widgets'
 import { TablesWidget8 } from '../../../_metronic/partials/widgets'
-import {useEffect} from 'react'
+//import {useEffect} from 'react'
 const DashboardPage = () => {
   
  

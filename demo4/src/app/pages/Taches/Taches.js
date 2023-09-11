@@ -15,17 +15,17 @@ export function Taches(){
 .then(responseJSon=>{setTache(responseJSon)})  
 }
 //SEARCH
-const [SearchParameterName,setSearchParameterName]=useState('');
-const handleInputChange=(event)=>{
-  setSearchParameterName(event.target.value.toString());
-}
-
-const searchItems=()=>{
-  let URL=SearchParameterName!=""?("https://localhost:7091/api/Taches/Search?prName"+SearchParameterName):"https://localhost:7091/api/Taches/GetAll";
-  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-  setTache(response.data);
-})
-}
+//const [SearchParameterName,setSearchParameterName]=useState('');
+//const handleInputChange=(event)=>{
+//  setSearchParameterName(event.target.value.toString());
+//}
+//
+//const searchItems=()=>{
+//  let URL=SearchParameterName!=""?("https://localhost:7091/api/Taches/Search?prName"+SearchParameterName):"https://localhost:7091/api/Taches/GetAll";
+//  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//  setTache(response.data);
+//})
+//}
 /**AJOUT */
 const saveTache= (formValue) => {
   console.log(formValue);

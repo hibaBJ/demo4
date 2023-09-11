@@ -2,16 +2,16 @@ import {FC} from 'react'
 import clsx from 'clsx'
 import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import {
-  HeaderNotificationsMenu,
+  //HeaderNotificationsMenu,
   HeaderUserMenu,
-  QuickLinks,
-  Search,
+ // QuickLinks,
+  //Search,
   ThemeModeSwitcher,
 } from '../../../partials'
 import {useLayout} from '../../core'
 
 const itemClass = 'ms-1 ms-lg-3',
-  btnClass = 'btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px',
+  //btnClass = 'btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px',
   userAvatarClass = 'symbol-30px symbol-md-40px',
   btnIconClass = 'svg-icon-1'
 

@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState,useEffect } from 'react'
-import {KTSVG, toAbsoluteUrl} from '../../../helpers'
+import React from 'react'
+//import {KTSVG, toAbsoluteUrl} from '../../../helpers'
 import AjoutGroupe from '../../modals/AjoutGroupe'
-import Multiselect from 'multiselect-react-dropdown'
+//import Multiselect from 'multiselect-react-dropdown'
 
 type Props = {
   className?: string

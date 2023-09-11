@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import axios from "axios";
+//import axios from "axios";
 
 function EditAttachement(props){
     console.log(props.item);
@@ -40,7 +40,7 @@ function EditAttachement(props){
   }
 const editAttachement=(prAttachement,prflag)=>{
    let  AttachementNewReference=[...Attachement];//creation de copie de  nouveau objet
-   const index=AttachementNewReference.findIndex((item)=>item.name == prAttachement.name);
+   const index=AttachementNewReference.findIndex((item)=>item.name === prAttachement.name);
    AttachementNewReference[index].isEditing=prflag;
    setAttachement(AttachementNewReference);
  }

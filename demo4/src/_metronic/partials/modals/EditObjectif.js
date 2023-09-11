@@ -41,7 +41,7 @@ setFormValue((prevState) => {
 }
 const editObjectif=(prObjectif,prflag)=>{
 let  ObjectifNewReference=[...Objectifs];//creation de copie de  nouveau objet
-const index=ObjectifNewReference.findIndex((item)=>item.name == prObjectif.name);
+const index=ObjectifNewReference.findIndex((item)=>item.name === prObjectif.name);
 ObjectifNewReference[index].isEditing=prflag;
 setObjectifs(ObjectifNewReference);
 }

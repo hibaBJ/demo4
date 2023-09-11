@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import axios from "axios";
+
 
 function EditSalarie(props){
     
@@ -42,7 +42,7 @@ setFormValue((prevState) => {
 }
 const editPaiement=(prPaiement,prflag)=>{
 let  PaiementNewReference=[...Paiement];//creation de copie de  nouveau objet
-const index=PaiementNewReference.findIndex((item)=>item.name == prPaiement.name);
+const index=PaiementNewReference.findIndex((item)=>item.name === prPaiement.name);
 PaiementNewReference[index].isEditing=prflag;
 setPaiement(PaiementNewReference);
 }

@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import axios from "axios";
+//import axios from "axios";
 
 function EditGroupe(props){
     console.log(props.item);
@@ -44,7 +44,7 @@ function EditGroupe(props){
   }
 const editGroupe=(prGroupe,prflag)=>{
    let  GroupeNewReference=[...Groupe];//creation de copie de  nouveau objet
-   const index=GroupeNewReference.findIndex((item)=>item.name == prGroupe.name);
+   const index=GroupeNewReference.findIndex((item)=>item.name === prGroupe.name);
    GroupeNewReference[index].isEditing=prflag;
    setGroupe(GroupeNewReference);
  }

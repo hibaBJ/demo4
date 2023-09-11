@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import axios from "axios";
+//import axios from "axios";
 
 function EditEmployee(props){
     console.log(props.item);
@@ -42,7 +42,7 @@ function EditEmployee(props){
   }
 const editRole=(prRole,prflag)=>{
    let  RoleNewReference=[...Role];//creation de copie de  nouveau objet
-   const index=RoleNewReference.findIndex((item)=>item.name == prRole.name);
+   const index=RoleNewReference.findIndex((item)=>item.name === prRole.name);
    RoleNewReference[index].isEditing=prflag;
    setRole(RoleNewReference);
  }

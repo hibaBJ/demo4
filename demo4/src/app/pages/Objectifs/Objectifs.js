@@ -1,8 +1,8 @@
 import {React,useState,useEffect} from "react";
 import axios from "axios";
 import { IconButton } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
+//import DeleteIcon from '@mui/icons-material/Delete';
+//import EditIcon from '@mui/icons-material/Edit';
 import AjoutObjectif from "../../../_metronic/partials/modals/AjoutObjectif";
 import EditObjectif from "../../../_metronic/partials/modals/EditObjectif";
 
@@ -20,18 +20,18 @@ useEffect(()=>{fetch("https://localhost:7091/api/Objectifs/GetAll").then(respons
   .then(responseJSon=>{setObjectif(responseJSon)})
       
   }
-  //SEARCH
-  const [SearchParameterName,setSearchParameterName]=useState('');
-  const handleInputChange=(event)=>{
-    setSearchParameterName(event.target.value.toString());
-  }
-  
-  const searchItems=()=>{
-    let URL=SearchParameterName!=""?("https://localhost:7091/api/Objectifs/Search?prName"+SearchParameterName):"https://localhost:7091/api/Objectifs/GetAll";
-    axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-    setObjectif(response.data);
-  })
-  }
+// //SEARCH
+// const [SearchParameterName,setSearchParameterName]=useState('');
+// const handleInputChange=(event)=>{
+//   setSearchParameterName(event.target.value.toString());
+// }
+// 
+// const searchItems=()=>{
+//   let URL=SearchParameterName!=""?("https://localhost:7091/api/Objectifs/Search?prName"+SearchParameterName):"https://localhost:7091/api/Objectifs/GetAll";
+//   axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//   setObjectif(response.data);
+// })
+// }
 /**AJOUT */
   const saveObjectifs=(formValue)=>{
     axios.post("https://localhost:7091/api/Objectifs/Save",formValue).then(response=>{

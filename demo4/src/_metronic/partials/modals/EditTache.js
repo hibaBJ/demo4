@@ -46,7 +46,7 @@ function EditTache(props){
   }
   const editTache=(prTache,prflag)=>{
     let  TacheNewReference=[...Tache];//creation de copie de  nouveau objet
-    const index=TacheNewReference.findIndex((item)=>item.name == prTache.name);
+    const index=TacheNewReference.findIndex((item)=>item.name === prTache.name);
     TacheNewReference[index].isEditing=prflag;
     setTache(TacheNewReference);
   }

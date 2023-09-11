@@ -2,8 +2,8 @@ import {React,useState,useEffect} from "react";
 import AjoutSalarié from "../../../_metronic/partials/modals/AjoutSalarié";
 import axios from "axios";
 import { IconButton } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
+//import DeleteIcon from '@mui/icons-material/Delete';
+//import EditIcon from '@mui/icons-material/Edit';
 import EditSalarie from "../../../_metronic/partials/modals/EditSalarie";
 
 
@@ -20,17 +20,17 @@ const [Paiement,setPaiement]=useState([]);
   .then(responseJSon=>{setPaiement(responseJSon)}) 
   }
   /**SEARCH */
-  const [SearchParameterName,setSearchParameterName]=useState('');
-const handleInputChange=(event)=>{
-  setSearchParameterName(event.target.value.toString());
-}
-
-const searchItems=()=>{
-  let URL=SearchParameterName!=""?("https://localhost:7091/api/Paiement/Search?prName"+SearchParameterName):"https://localhost:7091/api/Paiement/GetAll";
-  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-  setPaiement(response.data);
-})
-}
+//  const [SearchParameterName,setSearchParameterName]=useState('');
+//const handleInputChange=(event)=>{
+//  setSearchParameterName(event.target.value.toString());
+//}
+//
+//const searchItems=()=>{
+//  let URL=SearchParameterName!=""?("https://localhost:7091/api/Paiement/Search?prName"+SearchParameterName):"https://localhost:7091/api/Paiement/GetAll";
+//  axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//  setPaiement(response.data);
+//})
+//}
 /**Ajout */
 const savePaiement = (formValue) => {
   axios.post("https://localhost:7091/api/Paiement/Save",formValue).then(response=>{

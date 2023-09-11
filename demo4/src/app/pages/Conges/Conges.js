@@ -16,17 +16,17 @@ export function Conges(){
   }
 
    /**SEARCH */
-   const [SearchParameterName,setSearchParameterName]=useState('');
-   const handleInputChange=(event)=>{
-     setSearchParameterName(event.target.value.toString());
-   }
-   
-   const searchItems=()=>{
-     let URL=SearchParameterName!=""?("https://localhost:7091/api/Conges/Search?prName"+SearchParameterName):"https://localhost:7091/api/conges/GetAll";
-     axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
-     setConges(response.data);
-   })
-   }
+// const [SearchParameterName,setSearchParameterName]=useState('');
+// const handleInputChange=(event)=>{
+//   setSearchParameterName(event.target.value.toString());
+// }
+// 
+// const searchItems=()=>{
+//   let URL=SearchParameterName!=""?("https://localhost:7091/api/Conges/Search?prName"+SearchParameterName):"https://localhost:7091/api/conges/GetAll";
+//   axios.get(URL).then(response=>{response.data.map(item=>{item.isEditing=false;})
+//   setConges(response.data);
+// })
+// }
    /**AJOUT */
    const saveConges= (formValue) => {
     axios.post("https://localhost:7091/api/Conges/Save",formValue).then(response=>{

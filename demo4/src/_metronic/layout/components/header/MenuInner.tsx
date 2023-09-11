@@ -1,11 +1,11 @@
 import React from 'react'
-import {MenuItem} from './MenuItem'
-import {MenuInnerWithSub} from './MenuInnerWithSub'
+//import {MenuItem} from './MenuItem'
+//import {MenuInnerWithSub} from './MenuInnerWithSub'
 
-import {useIntl} from 'react-intl'
+//import {useIntl} from 'react-intl'
 
 export function MenuInner() {
-  const intl = useIntl()
+ // const intl = useIntl()
   return (
     <>
       

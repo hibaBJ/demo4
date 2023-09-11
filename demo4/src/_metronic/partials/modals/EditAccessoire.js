@@ -38,7 +38,7 @@ setFormValue((prevState) => {
 }
 const editAccessoire=(prAccessoire,prflag)=>{
 let  AccessoireNewReference=[...Accessoires];//creation de copie de  nouveau objet
-const index=AccessoireNewReference.findIndex((item)=>item.name == prAccessoire.name);
+const index=AccessoireNewReference.findIndex((item)=>item.name === prAccessoire.name);
 AccessoireNewReference[index].isEditing=prflag;
 setAccessoires(AccessoireNewReference);
 }

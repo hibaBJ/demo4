@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 const UsersListToolbar = () => {
   const {setItemIdForUpdate} = useListView()
-  const openAddUserModal = () => {
-    setItemIdForUpdate(null)
-  }
+//const openAddUserModal = () => {
+//  setItemIdForUpdate(null)
+//}
 
   return (
     <div className='d-flex justify-content-end' data-kt-user-table-toolbar='base'>

@@ -1,6 +1,6 @@
 import React from "react";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+//import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+//import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 export function Droits() {
 return (
