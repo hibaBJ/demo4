@@ -48,7 +48,6 @@ jobs:
         name: Install SSH key
         run: |
           mkdir -p ~/.ssh
-          rm -f ~/.ssh/id_rsa  # Remove existing key if it exists
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           ssh-keygen -t rsa -b 2048 -f ~/.ssh/id_rsa -N ""
           chmod 600 ~/.ssh/id_rsa
