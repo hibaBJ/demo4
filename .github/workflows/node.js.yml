@@ -54,4 +54,4 @@ jobs:
       -
         name: Deploy to Server
         run: |
-          ssh useradm@192.168.56.20 "cd /path/to/your/app && docker-compose pull && docker-compose up -d"
+          ssh useradm@192.168.56.20 "cd /demo4/demo4 && docker-compose pull && docker-compose up -d"
