@@ -50,7 +50,7 @@ jobs:
       mkdir -p ~/.ssh 
       echo "${{ secrets.SSH_DEPLOY_KEY }}" > ~/.ssh/id_rsa
       chmod 600 ~/.ssh/id_rsa
-      ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      ssh-keyscan -t rsa 192.168.56.20 >> ~/.ssh/known_hosts
       -
       name: Deploy to Server
       run: |
