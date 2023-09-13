@@ -46,8 +46,6 @@ jobs:
     steps:
       -
         name: Install SSH key
-      -
-        name: Install SSH key
         run: |
           mkdir -p ~/.ssh
           rm -f ~/.ssh/id_rsa  # Remove existing key if it exists
