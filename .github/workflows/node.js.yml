@@ -38,4 +38,4 @@ jobs:
         with:
           context: ./demo4
           push: true
-          tags: user/app:latest
+          tags: hiba1999/react:latest
