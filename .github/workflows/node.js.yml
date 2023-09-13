@@ -39,3 +39,19 @@ jobs:
           context: ./demo4
           push: true
           tags: hiba1999/react:latest
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: docker
+    steps:
+      -
+        name: Install SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -t rsa 192.168.56.20 >> ~/.ssh/known_hosts
+      -
+        name: Deploy to Server
+        run: |
+          ssh useradm@192.168.56.20 "cd /path/to/your/app && docker-compose pull && docker-compose up -d"
