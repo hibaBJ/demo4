@@ -47,6 +47,7 @@ jobs:
       -
        name: Install SSH key
        run: |
+          mkdir -p ~/.ssh 
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/home/y
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -t rsa 192.168.56.20 >> ~/.ssh/known_hosts
