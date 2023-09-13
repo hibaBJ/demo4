@@ -52,6 +52,9 @@ jobs:
       chmod 600 ~/.ssh/id_rsa
       ssh-keyscan -t rsa 192.168.56.20 >> ~/.ssh/known_hosts
       -
-        name: Deploy to Server
-        run: |
-          ssh useradm@192.168.56.20 "cd /demo4/demo4 && docker-compose pull && docker-compose up -d"
+      name: Deploy to Server
+      run: |
+       set -x  # Enable debugging
+       ssh useradm@192.168.56.20 "cd /demo4/demo4 && docker-compose pull && docker-compose up -d"
+  
+
