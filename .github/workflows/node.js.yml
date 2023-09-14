@@ -39,12 +39,19 @@ jobs:
           context: ./demo4
           push: true
           tags: hiba1999/react:latest
-
+       
   deploy:
     runs-on: ubuntu-latest
-    steps:
-    - name: SSH into Server and Deploy
-      run: |
-        ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no useradm@192.168.56.20 "cd /demo4/demo4 && docker-compose pull && docker-compose up -d"
-     
+    needs: docker
 
+    steps:
+      - name: Set up SSH key
+        run: |
+          echo "${{ secrets.SSH_DEPLOY_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+                 
+
+      - name: Deploy to Server
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no useradm@192.168.56.20 "cd /home/demo4/demo4 && docker-compose pull && docker-compose up -d"
+       
