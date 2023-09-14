@@ -48,10 +48,7 @@ jobs:
       - name: Set up SSH key
         run: |
           echo "${{ secrets.SSH_DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-                 
-
       - name: Deploy to Server
         run: |
-          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no useradm@192.168.56.20 "cd /home/demo4/demo4 && docker-compose pull && docker-compose up -d"
+          ssh -i ~/.ssh/id_rsa -o  useradm@192.168.56.20 "cd /home/demo4/demo4 && docker-compose pull && docker-compose up -d"
        
