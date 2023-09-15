@@ -1,7 +1,7 @@
 version: '3'
 services:
-  react:
-    container_name: my-react-app-with-nginx
+  my-react-app-with-nginx:
+    image: hiba1999/react:latest  
     build:
       context: .
       dockerfile: Dockerfile
