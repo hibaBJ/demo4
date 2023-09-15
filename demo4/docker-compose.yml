@@ -1,6 +1,7 @@
 version: '3'
 services:
-  web:
+  react:
+    container_name: my-react-app-with-nginx
     build:
       context: .
       dockerfile: Dockerfile
