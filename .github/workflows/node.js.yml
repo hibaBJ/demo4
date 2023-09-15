@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: deploy
+name: deploy on server nginx
 
 on:
   push:
@@ -39,3 +39,20 @@ jobs:
           context: ./demo4
           push: true
           tags: hiba1999/react:latest
+      -
+          name: Pull Docker Image
+          run: docker pull hiba1999/react:latest 
+         
+      -  
+        name: Déploiement sur le serveur distant
+        uses: thematchless/bump-image-version-action@v2
+        with:
+         remote_docker_host: useradm@192.168.56.20
+         service_name: hh 
+         ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+         ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
+         deploy_path: /demo4/demo4
+         args: up -d
+         pull_images_first: true
+         remote_docker_port: 22
+        
