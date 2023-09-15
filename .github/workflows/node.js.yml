@@ -49,3 +49,4 @@ jobs:
          deploy_path: /demo4/demo4
          args: up -d
          pull_images_first: true
+         remote_docker_port: 22
