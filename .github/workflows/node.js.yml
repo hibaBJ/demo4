@@ -41,7 +41,7 @@ jobs:
           tags: hiba1999/react:latest
       -
           name: Pull Docker Image
-          run: docker pull hiba1999/react:1
+          run: docker pull hiba1999/react:latest
          
       -  
         name: Déploiement sur le serveur distant
