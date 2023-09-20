@@ -39,7 +39,6 @@ jobs:
         run: docker pull hiba1999/react:latest
 
       - name: Deploy to Remote Server
-         name: Déploiement sur le serveur distant
         uses: thematchless/bump-image-version-action@v2
         with:
          remote_docker_host: useradm@192.168.56.20
