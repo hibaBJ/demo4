@@ -52,7 +52,7 @@ jobs:
          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
          ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
          deploy_path: /demo4/demo4
-         args: up -d
+        # args: up -d
          pull_images_first: true
          remote_docker_port: 22
         
