@@ -40,5 +40,5 @@ jobs:
 
       - name: Deploy to Remote Server
         run: |
-          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} useradm@192.168.31.130 "docker stop my-react-app-with-nginx && docker rm my-react-app-with-nginx"
-          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} useradm@192.168.31.130 "docker run -d -p 8080:80 --name my-react-app-with-nginx hiba1999/react:latest"
+          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} useradm@192.168.56.20 "docker stop my-react-app-with-nginx && docker rm my-react-app-with-nginx"
+          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} useradm@192.168.56.20 "docker run -d -p 8080:80 --name my-react-app-with-nginx hiba1999/react:latest"
