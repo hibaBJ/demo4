@@ -1,9 +1,0 @@
-version: '3'
-services:
-  my-react-app-with-nginx:
-    image: hiba1999/react:latest  
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
