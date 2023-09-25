@@ -57,7 +57,7 @@ export function Accessoires(){
               <div className="card card-xxl-stretch">
            <div className='card-header border-0 pt-5'>
             <h3 className='card-title align-items-start flex-column'>
-         <span className='card-label fw-bold fs-3 mb-1'>Liste des Accessoires</span>
+         <span className='card-label fw-bold fs-3 mb-1'>Liste des Accessoires accessoires</span>
         </h3>
       <div className='card-toolbar'>
       
@@ -84,8 +84,8 @@ export function Accessoires(){
                <tr className="fw-bolder fs-6 text-gray-800">
                   <th>Employé</th>
                   <th>Intitulé </th>
-                  <th> Code</th>
-                  <th>Action</th>
+                  <th>Code </th>
+                  <th>Action </th>
                   
          
                 </tr>
