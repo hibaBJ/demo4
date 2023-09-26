@@ -31,7 +31,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v2
         with:
-          context: ./demo4/Dockerfile
+          context: ./demo4
           push: true
           tags: hiba1999/react:latest
 
