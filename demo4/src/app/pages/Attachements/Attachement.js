@@ -67,7 +67,7 @@ const deleteAttachement=(prAttachement)=>{
     <div className="card card-xxl-stretch">
     <div className='card-header border-0 pt-5'>
       <h3 className='card-title align-items-start flex-column'>
-        <span className='card-label fw-bold fs-3 mb-1'>Liste des Attachements</span>
+        <span className='card-label fw-bold fs-3 mb-1'>Liste ++++Attachements</span>
       </h3>
       <div className='card-toolbar'>
       
